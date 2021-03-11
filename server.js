@@ -3,9 +3,11 @@
 require('dotenv').config();
 const bodyParser = require('body-parser');
 const { randomBytes } = require('crypto');
+const cors = require('cors');
 
 const app = require('express')();
 app.use(bodyParser.json());
+app.use(cors());
 
 const port = process.env.COMMENT_SERVER_PORT || 4001
 
