@@ -1,6 +1,6 @@
 # Comments Service
 
-The comment service is responsible for creating and retrieving posts. 
+The comment service is responsible for creating and retrieving posts. Anytime a post is created the post service emits an event to the Event Bus.
 
 # Running This Service
 
